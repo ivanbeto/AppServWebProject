@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styleabout.css">
+	<!--Link para poder hacer uso de iconos de redes sociales-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Para el titulo-->
+	<link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+	<!--Para los parrafos y textos planos-->
+	<link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+	<!--Para la barra de navegacion-->
+	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="images/logoFireGaming.png">
+	<title>Fire Gaming - Pagina Oficial</title>
+
+</head>
+<body>
+	<div class="titulo">
+		<a class="logo" href="index.html">
+			<img id="logoFG" src="images/logoFireGaming.png">
+		</a><br>
+		<h1 id="nombres">Fire Gaming</h1><br>
+		<h3 id="nombres">Tu tienda ideal gamer</h3>
+	</div>
+
+	<nav class="navbar">
+		<ul class="nav">
+			<li><a class="navbar_elem" href="index.html">Home</a></li>
+			<li><a class="navbar_elem" href="sucursales.html">Sucursales</a></li>
+			<li><a class="navbar_elem" href="servicio.html">Servicio al Cliente</a></li>
+			<li><a class="navbar_elem" href="about.html">Acerca de</a></li>
+			<li>
+				<form class="search-box" action="busqueda.php" method="post">
+					<input id="barra" type="text" name="barraBusqueda" placeholder="Busque aqui...">
+   					<!--<button id="Buscar" type="submit">Buscar</i></button> -->
+					<input id="Buscar" type="submit" value = "Buscar">
+    			</form>
+				
+			</li>
+		</ul>
+
+		<form>
+			<label id="labelform" for="Categorias">Elija una categoria</label>
+			<select id="Categorias" name="Categorias">
+				<option value="#Coleccionables">Coleccionables</option>
+				<option value="#JuegosXbox">Juegos Xbox</option>
+				<option value="#JuegosPlay">Juegos PlayStation</option>
+				<option value="#JuegosSwitch">Juegos Nintendo</option>
+			</select>
+			<input type="submit" name="Buscar">
+		</form>
+	</nav>
+
+	<div class="acercade" style="padding:10px; margin: 10px;">
+		<h3 style="font-family: MuseoModerno, cursive; font-size: 35px; color: rgb(219,243,87); text-align: center;">Acerca de Fire Gaming S.A. de C.V.</h3>
+		<!--<img src="images/logoFireGaming.png" alt="logofiregaming" style="margin-left: auto; margin-right: auto; size: 35%;">-->
+		<div class="mision">
+			<h4 style="font-family: MuseoModerno, cursive; color: rgb(251,53,62); font-size: 25px;">Nuestra Misión</h4>
+			<p>
+				Ser la mejor empresa de venta de videojuegos en México, ofreciendo los mejores precios y alta calidad.
+				Vendemos productos relacionados directamente como juegos, controles, consolas y más.
+				Así mismo buscamos vender diferentes productos como peluches, mochilas y más coleccionables de series y videojuegos.
+			</p>
+		</div>
+		<br>
+		<div class="vision">
+			<h4 style="font-family: MuseoModerno, cursive; color: rgb(251,53,62); font-size: 25px;">Nuestra Visión</h4>
+			<p>
+				Proveer al usuario la mejor experiencia de compra online en productos de entretenimiento y coleccionables.
+			</p>
+		</div>
+	</div>
+
+	<section class="integrantes">
+		<h3 style="color: white; text-align: center; font-family: MuseoModerno, cursive; font-size: 36px;">
+		Integrantes del equipo de desarrollo</h3>
+		<!--Primera carte de integrante-->
+		<div class="card">
+  			<img src="images/ivanbeto.jpg" alt="ivanbeto" style="width:100%">
+  			<h1>Iván Alejandro Beto Pérez</h1>
+  			<p class="title">Estudiante Ingenieria en Computación</p>
+  			<p>Facultad de Ingeniería</p>
+  			<p>Universidad Nacional Autónoma de México (U.N.A.M.)</p>
+  			<a href="#"><i class="fa fa-instagram" style="color: white;"></i></a>
+  			<a href="#"><i class="fa fa-twitter" style="color: rgb(8,140,249);"></i></a>
+  			<a href="https://www.twitch.tv/ivanbeto016"><i class="fa fa-twitch" style="color: rgb(83,13,234);"></i></a>
+  			<a href="https://www.facebook.com/ivan.betoperez"><i class="fa fa-facebook" style="color: darkblue;"></i></a>
+  			<p><button>Contact</button></p>
+		</div>
+		
+		<!--Primera carte de integrante-->
+		<div class="card">
+  			<img src="images/sebaszazueta.jpg" alt="zazueta" style="width:100%">
+  			<h1>Sebastian Pedro Zazueta Barajas</h1>
+  			<p class="title">Estudiante Ingenieria en Computación</p>
+  			<p>Facultad de Ingeniería</p>
+  			<p>Universidad Nacional Autónoma de México (U.N.A.M.)</p>
+  			<a href="https://instagram.com/spiderzazu?igshid=YmMyMTA2M2Y"><i class="fa fa-instagram" style="color: white;"></i></a>
+  			<a href="#"><i class="fa fa-twitter" style="color: rgb(8,140,249);"></i></a>
+  			<a href="#"><i class="fa fa-linkedin" style="color: orange;"></i></a>
+  			<a href="https://www.facebook.com/sebastian.zazueta.5/"><i class="fa fa-facebook" style="color: darkblue;"></i></a>
+  			<p><button>Contact</button></p>
+		</div>
+		
+		<!--Primera carte de integrante-->
+		<div class="card">
+  			<img src="images/rahtz.jpg" alt="zazueta" style="width:100%">
+  			<h1>Ricardo Antonio Hernandez Torres</h1>
+  			<p class="title">Estudiante Ingenieria en Computación</p>
+  			<p>Facultad de Ingeniería</p>
+  			<p>Universidad Nacional Autónoma de México (U.N.A.M.)</p>
+  			<a href="#"><i class="fa fa-instagram" style="color: white;"></i></a>
+  			<a href="#"><i class="fa fa-twitter" style="color: rgb(8,140,249);"></i></a>
+  			<a href="https://www.twitch.tv/rahtz"><i class="fa fa-twitch" style="color: rgb(83,13,234);"></i></a>
+  			<a href="https://www.facebook.com/ricardoantonio.hernandeztorres"><i class="fa fa-facebook" style="color: darkblue;"></i></a>
+  			<p><button>Contact</button></p>
+		</div>
+	</section>
+
+	<p style="font-size: 20px;">Para obtener más información acerca de nosotros, escríbenos y te leeremos sin problemas! En el apartado 'Servicio al Cliente' puedes dejarnos tus opiniones, sugerencias y dudas.</p>
+	
+</body>
+
+<footer>
+	<div class="grid-final">
+		<div class="item-foot">
+		   <h5>Informacion de la compañia</h5>
+		   <ul style="color: blue;">
+		     <li><a href="about.html">Sobre Nosotros</a></li>
+		     <li><a href="https://www.youtube.com/watch?v=mCdA4bJAGGk&ab_channel=sweetblue.">Trabaja con Nosotros</a></li>
+            </ul>
+		</div>
+		<div class="item-foot">
+			<h5>Redes sociales</h5>
+			<ul style="color: blue;">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Twitter</a></li>
+			</ul>
+		</div>
+		<div class="item-foot"></div>
+	</div>
+
+	<h4>Fire Gaming México Company. 2022.
+	Todos los derechos reservados</h4>
+</footer>
+
+</html>

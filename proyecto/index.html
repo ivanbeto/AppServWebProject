@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Pagina inicial de una tienda virtual de articulos de gaming">
+	<meta name="keywords" content="Videojuegos, Gaming, Coleccionables, Funko, PS4, XBOX, PC">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Link para poder hacer uso de iconos de redes sociales-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Para el titulo-->
+	<link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+	<!--Para los parrafos y textos planos-->
+	<link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+	<!--Para la barra de navegacion-->
+	<link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="images/logoFireGaming.png">
+	<title>Fire Gaming - Pagina Oficial</title>
+
+</head>
+<body>
+	<div class="titulo">
+		<a class="logo" href="index.html">
+			<img id="logoFG" src="images/logoFireGaming.png">
+		</a><br>
+		<h1 id="nombres">Fire Gaming</h1><br>
+		<h3 id="nombres">Tu tienda ideal gamer</h3>
+	</div>
+
+	<nav class="navbar">
+		<ul class="nav">
+			<li><a class="navbar_elem" href="index.html">Home</a></li>
+			<li><a class="navbar_elem" href="sucursales.html">Sucursales</a></li>
+			<li><a class="navbar_elem" href="servicio.html">Servicio al Cliente</a></li>
+			<li><a class="navbar_elem" href="about.html">Acerca de</a></li>
+			<li>
+				<form class="search-box" action="busqueda.php" method="post">
+					<input id="barra" type="text" name="barraBusqueda" placeholder="Busque aqui...">
+   					<!--<button id="Buscar" type="submit">Buscar</i></button> -->
+					<input id="Buscar" type="submit" value = "Buscar">
+    			</form>
+				
+			</li>
+		</ul>
+
+		<form>
+			<label id="labelform" for="Categorias">Elija una categoria</label>
+			<select id="Categorias" name="Categorias">
+				<option value="#Coleccionables">Coleccionables</option>
+				<option value="#JuegosXbox">Juegos Xbox</option>
+				<option value="#JuegosPlay">Juegos PlayStation</option>
+				<option value="#JuegosSwitch">Juegos Nintendo</option>
+			</select>
+			<input type="submit" name="Buscar">
+		</form>
+	</nav>
+
+	<div class="carrousel">
+		<h2 class="titulares">Recientes Adquisiones</h2>
+		<ul>
+			<li><img class="carru-item" src="images/fnaf_sb.png"><br></li>
+			<li><img class="carru-item" src="images/mortal-kombat-11.jpg"></li>
+			<li><img class="carru-item" src="images/spiderman_mm.jpg"></li>
+		</ul>
+	</div>
+	<br>
+	<br>
+	<h3 class="titulares">Productos más populares</h3>
+	<section class="grid-ofertas" id="Ofertas">
+		<div class="item">
+			<h4>Figura Funko Kimetsu No Yaiba - Inosuke Hashibira</h4>
+			<img class="product" src="images/9.jpg">
+			<br>
+			<!--<form>
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select">
+			</form>-->
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value =1>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Figura Funko Kimetsu No Yaiba - Tanjiro Kamado </h4>
+			<img class="product" src="images/19.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=2>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Minecraft Java Edition - Nintendo Switch</h4>
+			<img class="product" src="images/2.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=3>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Marvel Spider-Man Miles Morales Edición PS4</h4>
+			<img class="product" src="images/8.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=4>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Elden Ring Stantard Edition - Xbox One</h4>
+			<img class="product" src="images/17.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=5>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Mortal Kombat 11 Standard Edition - Xbox One</h4>
+			<img class="product" src="images/16.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=6>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+	</section>
+
+	
+	<section class="press_box">
+		<p class="presentacion">
+			Tenemos mucha variedad en cuanto a articulos gamer tanto para conocedores como para gente nueva
+			que quiere conocer. Ofrecemos a nuestros clientes tanto juguetes como figuras Funko, peluches de series,
+			películas, títulos de juegos, así como videojuegos de todos los géneros y para las consolas más populares
+			como PS4, PS5 (Proximamente), XBOX y artículos electrónicos para jugadores de PC, como teclados, mouses, audífonos, cables, etc.
+		</p>
+	</section>
+
+	<!--Grid de juegos de xbox-->
+	<h3 id="articulos-xbox">Juegos para XBOX</h3>
+	<section class="grid-xbox" id="JuegosXbox">
+		<div class="item">
+			<h4>Halo 5 Guardians</h4>
+			<img class="product" src="images/halo5guardians.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=7>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+			
+		<div class="item">
+			<h4>FIFA 22 Xbox Edition</h4>
+			<img class="product" src="images/fifa22-cover1-1a1bdc8505591edddf16297389563517-480-0.png">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=8>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+			
+		<div class="item">
+			<h4>Call Of Duty Modern Warfare</h4>
+			<img class="product" src="images/codmodern.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=9>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+			
+		<div class="item">
+			<h4>Rise Of The Tomb Raider</h4>
+			<img class="product" src="images/SW-XBOX-ONE-RISE-OF-THE-TOMB-RAIDER.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=10>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+			
+		<div class="item">
+			<h4>Elden Ring Stantard Edition - Xbox One</h4>
+			<img class="product" src="images/17.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=5>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+			
+		<div class="item">
+			<h4>Mortal Kombat 11 Standard Edition - Xbox One</h4>
+			<img class="product" src="images/16.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=6>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+	</section>
+	<br>
+	<br>
+	<!--Grid de juegos de playstation-->
+	<h4 id="articulos-play">Juegos para PS4 y PS5</h4>
+	<section class="grid-play" id="JuegosPlay">
+		<div class="item">
+			<h4>FIFA 22 PS4 Edition</h4>
+			<img class="product" src="images/FIFA22.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=11>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Wolfenstein II The New Colossus</h4>
+			<img class="product" src="images/wolfenstein2.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=12>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Marvel Spiderman PS4 Game Of The Year Edition</h4>
+			<img class="product" src="images/spidermanPS4GOTY.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=13>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Marvel Spider-Man Miles Morales Edición PS4</h4>
+			<img class="product" src="images/8.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=4>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Final Fantasy XV Day One Edition PS4</h4>
+			<img class="product" src="images/finalfantasyXV.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=14>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Metal Gear Solid V The Phantom Pain PS4</h4>
+			<img class="product" src="images/metal-gear-solid-5.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=15>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+	</section>
+	<br>
+	<br>
+	<!--Grid de juegos de switch-->
+	<h4 id="articulos-switch">Juegos para Nintendo Switch</h4>
+	<section class="grid-switch" name="JuegosSwitch">
+		<div class="item">
+			<h4>Super Smash Bros</h4>
+			<img class="product" src="images/supersmashbros.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=16>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Mario Party Superstars</h4>
+			<img class="product" src="images/11.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=17>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Fire Emblem Three Houses</h4>
+			<img class="product" src="images/7.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=18>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Metroid Dread</h4>
+			<img class="product" src="images/metrioddread.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=19>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Super Mario 3D All-Stars</h4>
+			<img class="product" src="images/3.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=20>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Pokemon Shining Pearl</h4>
+			<img class="product" src="images/pokemonSP.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=21>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+	</section>
+
+	<br>
+	<br>
+	<!--Grid de Coleccionables-->
+	<h4 id="articulos-coleccionables">Coleccionables</h4>
+	<section class="grid-collectable" name="Coleccionables">
+		<div class="item">
+			<h4>Funko Pokemon Bulbasaur</h4>
+			<img class="product" src="images/10.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=22>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Funko Pokemon Charizard</h4>
+			<img class="product" src="images/4.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=23>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Funko Mandalorian S2 finale</h4>
+			<img class="product" src="images/12.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=24>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Amiibo Metroid Dread 2 pack</h4>
+			<img class="product" src="images/6.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=25>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+		
+		<div class="item">
+			<h4>Funko Nezuko Kamado con caja</h4>
+			<img class="product" src="images/18.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=26>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+
+		<div class="item">
+			<h4>Funko Spiderman</h4>
+			<img class="product" src="images/funko-pop-spiderman.jpg">
+			<br>
+			<br>
+			<form action="pedido.php" method="post">
+				<label>Seleccione su producto</label>
+				<input type="checkbox" name="select" value=27>
+				<br>
+				<label>Cantidad:</label>
+				<input type="text" name="cantidad">
+				<input type="submit" name="submit" value="Comprar">
+				<input type="reset" name="reset" value="Borrar">
+			</form>
+		</div>
+	</section>
+	<br>
+	<br>
+	<div class="JuegosPS5" name="ps5games">
+		<h4 id="ps5games">Juegos de PlayStation 5</h4>
+		<p>
+			Para poder ver los nuevos estrenos en consola PlayStation 5, haga click en el botón debajo siguiente :)
+		</p>
+		<button onclick="deployAdd()">Juegos de PS5</button>
+		<script>
+			function deployAdd(){
+				alert("Proximamente en nuestro Stock, juegos de PlayStation5\nSiga esperando!!!!");
+			}
+		</script>
+	</div>
+
+</body>
+
+
+<footer>
+	<div class="grid-final">
+		<div class="item-foot">
+		   <h5>Informacion de la compañia</h5>
+		   <ul style="color: blue;">
+		     <li><a href="about.html">Sobre Nosotros</a></li>
+		     <li><a href="https://www.youtube.com/watch?v=mCdA4bJAGGk&ab_channel=sweetblue.">Trabaja con Nosotros</a></li>
+            </ul>
+		</div>
+		<div class="item-foot">
+			<h5>Redes sociales</h5>
+			<ul style="color: blue;">
+				<li><a href="https://www.youtube.com/watch?v=mCdA4bJAGGk&ab_channel=sweetblue.">Facebook</a></li>
+				<li><a href="https://www.youtube.com/watch?v=mCdA4bJAGGk&ab_channel=sweetblue.">Instagram</a></li>
+				<li><a href="https://www.youtube.com/watch?v=mCdA4bJAGGk&ab_channel=sweetblue.">Twitter</a></li>
+			</ul>
+		</div>
+		<div class="item-foot"></div>
+	</div>
+
+	<h4>Fire Gaming México Company. 2022.
+	Todos los derechos reservados</h4>
+</footer>
+
+</html>

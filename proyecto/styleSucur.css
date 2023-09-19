@@ -1,0 +1,278 @@
+
+body{
+	background-image: url("images/wallpaperpagina.png");
+	background-position: center;
+}
+
+/*Animacion para la sombra del titulo*/
+@keyframes sombras{
+	0% {text-shadow: 6px 5px 4px red;}
+	50% {text-shadow: 6px 5px 4px blue;}
+	100% {text-shadow: 6px 5px 4px red;}
+}
+
+.titulo{
+	background-image: linear-gradient(to bottom right,rgba(139, 0, 0,1),rgba(251,255,8, 0.6));
+	color: yellow;
+	text-shadow: 6px 5px 4px red;
+	animation-name: sombras;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	text-align: center;
+}
+
+#nombres{
+	font-family: 'Tourney', cursive;
+	display: inline-table;
+	margin-top: 0.1px;
+}
+h1#nombres{
+	font-size: 38px;
+}
+
+h3#nombres{
+	font-size: 18px;
+}
+
+#logoFG{
+	width: 7%;
+	height: 7%;
+	position: relative;
+}
+#labelform{
+	color: white;
+}
+.nav{
+	background-image: linear-gradient(to top left,rgba(139, 0, 0,1),rgba(251,255,8, 0.5));
+	list-style-type: none;
+	font-weight: bold;
+	border-style: groove;
+	border-color: darkgoldenrod;
+	margin-top: 0.1px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navbar_elem{
+	float: left;
+	display: block;
+	font-family: 'MuseoModerno', cursive;
+	font-weight: bold;
+	color: yellow;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.navbar_elem:hover{
+	background-image: linear-gradient(to bottom right,rgba(255,255,255,1),rgba(251,255,8, 0.3));
+	color: darkred;
+}
+
+
+.search-box{
+	float: right;
+}
+
+.search-box input[type=text]{
+	padding: 8px;
+	margin-top: 7px;
+	font-size: 17px;
+	border: none;
+	border-radius: 6px;
+}
+
+.search-box button{
+	float: right;
+	padding: 9px;
+	margin-top: 7px;
+	margin-right: 16px;
+	background: rgb(78,1,1);
+	color: rgb(250,56,56);
+	cursor: pointer;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+}
+
+#Buscar:hover{
+	background: rgb(232,247,110);
+	color: rgb(245,9,9);
+}
+
+@media screen and (max-width: 600px) {
+  .nav .search-box {
+    float: none;
+  }
+  .nav a, .nav input[type=text], .nav .search-box button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .nav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*Grid de sucursales en Mexico*/
+
+.encabezado #sucursales{
+	padding: 10px;
+	display: inline-block;
+	color: white;
+	font-family: MuseoModerno, cursive;
+	font-size: 40px;
+}
+
+.encabezado img{
+	width: 7%;
+	height: 7%;
+}
+
+.grid-sucur{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	border-left: outset;
+	border-color: silver;
+	padding: 10px;
+	margin: 20px;
+}
+
+.sucursal-mex{
+	padding: 5px;
+	margin: 5px;
+	background: rgba(10,108,4,0.35);
+	border-bottom: outset rgb(238,7,49);
+	color: rgb(212,214,212);
+}
+
+.sucursal-mex h4{
+	font-family: 'Raleway', sans-serif;
+	color: ;
+	font-size: 25px;
+}
+
+.sucursal-mex p{
+	font-family: 'Alef', sans-serif;
+}
+
+.sucursal-mex:hover{
+	background: darkred;
+	color: gold;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+/*Grid de sucursales mundial*/
+.encabezado-mundial{
+	padding: 5px;
+	display: inline;
+	color: white;
+	font-family: MuseoModerno, cursive;
+	font-size: 30px;
+}
+
+.encabezado-mundial img{
+	width: 6%;
+	height: 6%;
+}
+
+.grid-sucur-mundial{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+	border-left: outset rgb(5,18,156);
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.sucursal-mun{
+	background: rgba(3,14,114,0.32);
+	border-bottom: inset silver;
+	padding: 5px;
+	margin: 5px;
+}
+
+.sucursal-mun h4{
+	font-family: 'Raleway', sans-serif;
+	color: lime;
+	font-size: 25px;
+}
+
+.sucursal-mun img{
+	width: 5%;
+	height: 19%;
+	display: inline-block;
+}
+
+.sucursal-mun p{
+	font-family: 'Alef', sans-serif;
+	color: white;
+}
+
+.sucursal-mun:hover{
+	background: rgb(3,14,114);
+	cursor: pointer;
+	color: lime;
+	transition-duration: 0.5s;
+}
+
+/*Diseño del Footer*/
+.grid-final{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	border-top: 2px darkred outset;
+	border-bottom: 2px gold outset;
+	padding: 20px;
+	grid-gap: 20px;
+}
+
+.item.foot{
+	display: inline-block;
+}
+
+.item-foot h5{
+	color: white;
+	font-family: sans-serif;
+
+}
+
+footer h4{
+	color: yellow;
+	font-family: sans-serif;
+	text-align: center;
+	font-family: 'Alef', sans-serif;
+}
+
+.item-foot h5{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+.item-foot ul li a{
+	color: rgb(246, 250, 23);
+	font-family: 'Alef', sans-serif;
+}
+
+
+footer h4{
+	color: yellow;
+	font-family: sans-serif;
+	text-align: center;
+	font-family: 'Alef', sans-serif;
+}
+
+.item-foot h5{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+.item-foot ul li a{
+	color: rgb(246, 250, 23);
+	font-family: 'Alef', sans-serif;
+}

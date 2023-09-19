@@ -1,0 +1,231 @@
+
+body{
+	background-image: url("images/wallpaperpagina.png");
+	background-position: center;
+}
+/*Animacion para la sombra del titulo*/
+@keyframes sombras{
+	0% {text-shadow: 6px 5px 4px red;}
+	50% {text-shadow: 6px 5px 4px blue;}
+	100% {text-shadow: 6px 5px 4px red;}
+}
+
+.titulo{
+	background-image: linear-gradient(to bottom right,rgba(139, 0, 0,1),rgba(251,255,8, 0.6));
+	color: yellow;
+	text-shadow: 6px 5px 4px red;
+	animation-name: sombras;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	text-align: center;
+}
+
+#nombres{
+	font-family: 'Tourney', cursive;
+	display: inline-table;
+	margin-top: 0.1px;
+}
+h1#nombres{
+	font-size: 38px;
+}
+
+h3#nombres{
+	font-size: 18px;
+}
+
+#logoFG{
+	width: 7%;
+	height: 7%;
+	position: relative;
+}
+#labelform{	
+	font-family: "Ubuntu", sans-serif;
+	color: white;
+}
+.nav{
+	background-image: linear-gradient(to top left,rgba(139, 0, 0,1),rgba(251,255,8, 0.5));
+	list-style-type: none;
+	font-weight: bold;
+	border-style: groove;
+	border-color: darkgoldenrod;
+	margin-top: 0.1px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.search-box{
+	float: right;
+}
+
+.search-box input[type=text]{
+	padding: 8px;
+	margin-top: 7px;
+	font-size: 17px;
+	border: none;
+	border-radius: 6px;
+}
+
+.search-box button{
+	float: right;
+	padding: 9px;
+	margin-top: 7px;
+	margin-right: 16px;
+	background: rgb(78,1,1);
+	color: rgb(250,56,56);
+	cursor: pointer;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+}
+
+#Buscar:hover{
+	background: rgb(232,247,110);
+	color: rgb(245,9,9);
+}
+
+@media screen and (max-width: 600px) {
+  .nav .search-box {
+    float: none;
+  }
+  .nav a, .nav input[type=text], .nav .search-box button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .nav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.navbar_elem{
+	float: left;
+	display: block;
+	font-family: 'MuseoModerno', cursive;
+	font-weight: bold;
+	color: yellow;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.navbar_elem:hover{
+	background-image: linear-gradient(to bottom right,rgba(255,255,255,1),rgba(251,255,8, 0.3));
+	color: darkred;
+}
+
+.acercade img{
+	margin-left: auto;
+	margin-right: auto;
+	size: 50%;
+}
+
+/*Para el diseño de las cartas*/
+.card {
+  background-image: linear-gradient(to bottom left, red, black);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.card h1, p{
+	color: white;
+  	font-family: 'Alef', sans-serif;
+}
+
+.card p{
+	font-size: 13px;
+}
+
+.card h1{
+	font-size: 22px;
+}
+
+.title {
+  color: gold;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+/*Diseño del Footer*/
+.grid-final{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	border-top: 2px darkred outset;
+	border-bottom: 2px gold outset;
+	padding: 20px;
+	grid-gap: 20px;
+}
+
+.item.foot{
+	display: inline-block;
+}
+
+.item-foot h5{
+	color: white;
+	font-family: sans-serif;
+
+}
+
+footer h4{
+	color: yellow;
+	font-family: sans-serif;
+	text-align: center;
+	font-family: 'Alef', sans-serif;
+}
+
+.item-foot h5{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+.item-foot ul li a{
+	color: rgb(246, 250, 23);
+	font-family: 'Alef', sans-serif;
+}
+
+
+footer h4{
+	color: yellow;
+	font-family: sans-serif;
+	text-align: center;
+	font-family: 'Alef', sans-serif;
+}
+
+.item-foot h5{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+.item-foot ul li a{
+	color: rgb(246, 250, 23);
+	font-family: 'Alef', sans-serif;
+}
